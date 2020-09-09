@@ -5,7 +5,7 @@
     <div class="container-fluid p-4">
         <div class="row mb-3">
             <div class="col-12">
-                <h2>Penilaian Akademik</h2>
+                <h1>Penilaian Akademik</h1>
             </div>
         </div>
         @if(Session::get('message') != null)
@@ -40,15 +40,13 @@
             </div>
         @else
             <div class="row mb-3">
-                <div class="col-2">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#importModal">
-                        Import
+                <div class="col-6 d-flex">
+                    <button type="button" class="btn btn-primary mr-3" data-toggle="modal" data-target="#importModal">
+                        Import Nilai
                     </button>
-                </div>
-                <div class="col-2">
-                <form action="{{url('pelajaran/internal/how-to-upload')}}" method="post">
-                        @csrf
-                        <button type="submit" class="btn btn-success">Panduan Upload <span class="ion ion-android-document"></span></button>
+                    <form action="{{url('pelajaran/internal/how-to-upload')}}" method="post" class="form-inline">
+                            @csrf
+                            <button type="submit" class="btn btn-success">Panduan Upload <span class="ion ion-android-document"></span></button>
                     </form>
                 </div>
             </div>

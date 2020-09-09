@@ -199,7 +199,7 @@
                         <li class="nav-item">
                             <a href="{{ url('password/change-password') }}" class="nav-link bg-light">
                                 <i class="nav-icon ion-android-unlock"></i>
-                                <p>Ubah Password</p>
+                                <p>Ganti Password</p>
                             </a>
                         </li>
                         @endif

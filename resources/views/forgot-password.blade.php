@@ -1,36 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Forgot Password</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="{{asset('/css/login-v3.css')}}">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script type="text/javascript" src="{{asset('/js/alert-box.js')}}"></script>
-
-
+@extends('template.internal_master')
+@section('title', 'Lupa Password')
+@section('js_before')
 	@if(Session::has('error'))
     		<script type="text/javascript">
 				alert("{{ Session::get('error') }}");
     		</script>
 	@endif
-
-	
-</head>
-<body>
-	<div class="container">
-		<h2>Forgot Password ?</h2>
-		<form method="post" action="{{url('/change-password/'.$type)}}">
-			@csrf
-			<div class="login">
-				<div id="login-form">
-					<input type="email" name="email" maxlength="#maxlength" size="50" id="email-field" class="login-form-field" placeholder="Email">
+@endsection
+@section('content')
+	<div class="container-header">
+		<div class="container-fluid pl-4 pt-2">
+			<div class="row mb-2">
+				<div class="col-sm-6">
+					<h1 class="m-0 text-dark">Lupa Password</h1>
 				</div>
-		<button type="submit" id="login-button">
-			Submit
-		</button>
-	</form>
+			</div>
+		</div>
+	</div>
 
-
-</body>
-</html>
+	<div class="container-fluid p-4">
+		<div class="row">
+			<div class="col-12">
+				<form method="post" action="{{url('/change-password/'.$type)}}">
+					@csrf
+					<input type="email" name="email" maxlength="#maxlength" size="50" id="email-field" class="form-control mb-3" placeholder="Email">
+					<button type="submit" id="login-button" class="btn btn-primary">
+						Submit
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+@endsection

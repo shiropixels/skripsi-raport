@@ -1,42 +1,47 @@
 @extends('template.internal_master')
 @section('title', 'Dashboard')
 @section('content')
-<!-- <div class="content-header">
-  <div class="container-fluid">
-  </div> -->
+
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid pl-4 pt-2">
+        <div class="row mb-3">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Profil</h1>
+          </div>
+        </div>
+        @if($errors->any())
+        <div class="alert alert-danger">{{ implode('', $errors->all('message')) }} </div>
+        @endif
+
+        @if(Session::get('message') != null)
+        <div class="row">
+          <div class="col-12">
+            <div class="alert alert-success" role="alert">
+              <strong>
+                {{ Session::get('message') }}
+              </strong>
+            </div>
+          </div>
+        </div>
+
+        @elseif(Session::get('error') != null)
+        <div class="row">
+          <div class="col-12">
+            <div class="alert alert-danger" role="alert">
+              <strong>
+                {{ Session::get('error') }}
+              </strong>
+            </div>
+          </div>
+        </div>
+        @endif
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
   <section class="content">
     <div class="container-fluid p-4">
-      <div class="row mb-3">
-        <div class="col-sm-6">
-          <h1 class="m-0 text-dark">Profil</h1>
-        </div>
-      </div>
-      @if($errors->any())
-      <div class="alert alert-danger">{{ implode('', $errors->all('message')) }} </div>
-      @endif
-
-      @if(Session::get('message') != null)
-      <div class="row">
-        <div class="col-12">
-          <div class="alert alert-success" role="alert">
-            <strong>
-              {{ Session::get('message') }}
-            </strong>
-          </div>
-        </div>
-      </div>
-
-      @elseif(Session::get('error') != null)
-      <div class="row">
-        <div class="col-12">
-          <div class="alert alert-danger" role="alert">
-            <strong>
-              {{ Session::get('error') }}
-            </strong>
-          </div>
-        </div>
-      </div>
-      @endif
 
       <!-- Main row -->
       <div class="row">

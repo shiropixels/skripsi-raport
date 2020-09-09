@@ -5,7 +5,7 @@
     <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
-        <h3 class="modal-title" id="exampleModal3Label">Add Student</h3>
+        <h3 class="modal-title" id="exampleModal3Label">Tambah Siswa</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -23,11 +23,11 @@
             <span id="multiple-form-school-internal">
                 <div class="row">
                     <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                        <strong class="align-self-center lead"> Name </strong>
+                        <strong class="align-self-center lead"> Nama </strong>
                     </div>
 
                     <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                        <input name="name[]" type="text" class="form-control" required placeholder="Input Name" value="" />
+                        <input name="name[]" type="text" class="form-control" required placeholder="Input Nama" value="" />
                     </div>
                 </div>
 
@@ -63,11 +63,11 @@
 
                 <div class="row mt-4 mt-md-2">
                     <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                        <strong class="align-self-center lead"> Phone </strong>
+                        <strong class="align-self-center lead"> Nomor Telpon </strong>
                     </div>
 
                     <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                        <input name="phone[]" type="text" class="form-control numeric-text" required placeholder="Input Phone" value="" />
+                        <input name="phone[]" type="text" class="form-control numeric-text" required placeholder="Input Nomor Telpon" value="" />
                     </div>
                 </div>
 
@@ -84,8 +84,8 @@
                 </div>
             </span>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="submit" class="btn btn-primary">Simpan</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
         </div>
       </div>
     </div>

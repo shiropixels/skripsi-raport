@@ -16,11 +16,11 @@
         <div class="modal-body">
             <div class="row">
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                    <strong class="align-self-center lead"> Name </strong>
+                    <strong class="align-self-center lead"> Nama </strong>
                 </div>
 
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                    <input name="name" type="text" class="form-control" required placeholder="Input Name" value="{{ $data->name }}" />
+                    <input name="name" type="text" class="form-control" required placeholder="Input Nama" value="{{ $data->name }}" />
                 </div>
             </div>
 
@@ -30,22 +30,22 @@
                 </div>
 
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                    <input name="email" type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Input Name" value="{{ $data->email }}" />
+                    <input name="email" type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Input Email" value="{{ $data->email }}" />
                 </div>
             </div>
 
             <div class="row mt-4 mt-md-2">
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                    <strong class="align-self-center lead"> Phone </strong>
+                    <strong class="align-self-center lead"> Nomor Telpon </strong>
                 </div>
 
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
-                    <input name="phone" type="text" class="form-control numeric-text" required placeholder="Input Name" value="{{ $data->phone }}" />
+                    <input name="phone" type="text" class="form-control numeric-text" required placeholder="Input Nomor Telpon" value="{{ $data->phone }}" />
                 </div>
             </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
         </div>
       </div>
     </div>

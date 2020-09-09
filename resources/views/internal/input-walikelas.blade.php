@@ -3,7 +3,7 @@
 @section('content')
     <!-- Content Header (Page header) -->
     <div class="content-header">
-      <div class="container-fluid">
+      <div class="container-fluid pl-4 pt-2">
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0 text-dark">Daftar WaliKelas</h1>
@@ -38,11 +38,11 @@
 
   <!-- Main content -->
     <section class="content">
-        <div class="container-fluid">
+        <div class="container-fluid p-4">
 
           <div class="row mb-4">
             <div class="col-12 d-flex justify-content-end">
-              <button type="button" class="btn btn-primary" onclick="$('#school-internal-add-modal').modal('show');"><i class="fa fa-plus"></i> Add School Internal</button>
+              <button type="button" class="btn btn-primary" onclick="$('#school-internal-add-modal').modal('show');"><i class="fa fa-plus"></i> Tambah Internal Sekolah</button>
             </div>
           </div>
 
@@ -51,10 +51,10 @@
               <thead>
                 <tr>
                   <th>id</th>
-                  <th>Name</th>
+                  <th>Nama</th>
                   <th>Email</th>
-                  <th>Phone Number</th>           
-                  <th>Action</th>           
+                  <th>Nomor Telpon</th>           
+                  <th>Aksi</th>           
                 </tr>
               </thead>
               <tbody>
@@ -71,9 +71,9 @@
 
                       <div class="d-flex justify-content-center ml-md-1 ml-0 mt-2 mt-md-0">
                         @if($row->active == 'Y')
-                          <button type="button" onclick="triggerModal('/ajax/get-school-internal-deactivate/{{ $row->id }}');" class="btn btn-danger"><i class="fa fa-user-alt-slash"></i> Deactive</button>
+                          <button type="button" onclick="triggerModal('/ajax/get-school-internal-deactivate/{{ $row->id }}');" class="btn btn-danger"><i class="fa fa-user-alt-slash"></i> Non-Aktifkan</button>
                         @else 
-                          <button type="button" onclick="triggerModal('/ajax/get-school-internal-activate/{{ $row->id }}');" class="btn btn-info"><i class="fa fa-user-check"></i> Activate</button>
+                          <button type="button" onclick="triggerModal('/ajax/get-school-internal-activate/{{ $row->id }}');" class="btn btn-info"><i class="fa fa-user-check"></i> Aktifkan</button>
                         @endif
                       </div>
                     </td> 

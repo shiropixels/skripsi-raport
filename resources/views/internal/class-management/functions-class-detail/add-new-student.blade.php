@@ -14,7 +14,7 @@
             <div class="modal-body">
             <div class="row">
                 <div class="col-12">
-                    <select class="js-select2 form-control" name="student_id" style="width: 100%;" data-placeholder="Pilih Walikelas">
+                    <select class="js-select2 form-control" name="student_id" style="width: 100%;" data-placeholder="Pilih Siswa">
                         <option></option>
                         @foreach ($all_student as $set)
                             <option value="{{ $set->id }}"> {{ $set->name }} </option>

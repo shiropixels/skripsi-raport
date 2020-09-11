@@ -11,7 +11,7 @@
             </div>
           </div>
         </div>
-	@elseifSession::has('error'))
+	@elseif(Session::has('error'))
     		<script type="text/javascript">
 				alert("{{ Session::get('error') }}");
     		</script>

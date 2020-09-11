@@ -1,17 +1,7 @@
 @extends('template.internal_master')
 @section('title', 'Lupa Password')
 @section('js_before')
-	@if(Session::get('message') != null)
-        <div class="row">
-          <div class="col-12">
-            <div class="alert alert-success" role="alert">
-              <strong>
-                {{ Session::get('message') }}
-              </strong>
-            </div>
-          </div>
-        </div>
-	@elseifSession::has('error'))
+	@if(Session::has('error'))
     		<script type="text/javascript">
 				alert("{{ Session::get('error') }}");
     		</script>

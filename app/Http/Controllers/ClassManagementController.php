@@ -109,7 +109,7 @@ class ClassManagementController extends Controller
 
         // if($getCurrentMonth == 12)
         //         if($getCurrentDate != 31)
-                    $enableButton = true;
+                    // $enableButton = true;
 
         return view('internal/class-management/class-detail')
             ->with('class', $class)

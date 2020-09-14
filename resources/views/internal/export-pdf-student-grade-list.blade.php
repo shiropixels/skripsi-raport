@@ -199,7 +199,7 @@
                 </tr>
             </table>
 
-            <table>
+            <!-- <table>
                 <tr class="heading" style="text-align: center">
                     <td colspan="2">
                         Catatan Wali Kelas
@@ -210,7 +210,7 @@
                     <td colspan="2" style="height: 100px; border: 1px solid">
                     </td>
                 </tr>
-            </table>
+            </table> -->
             <br>
             <table style="width: 100%">
                 <tr style="text-align: right;">
